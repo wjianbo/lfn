@@ -14,3 +14,4 @@ life note, [howto](./howto.md)
 - 09:36 | testing
 - 10:45 | Cook lunch
 - 13:14 | Testing
+- 13:30 | [Work] Draft document
