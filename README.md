@@ -22,3 +22,4 @@ export LIFE_NOTE_TZ=Asia/Tokyo
 - 05:58 | Wake up
 - 08:03 | Start work
 - 08:35 | lfn: add time zone support
+- 08:35 | testing
