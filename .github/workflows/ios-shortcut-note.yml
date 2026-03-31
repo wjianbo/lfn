@@ -49,6 +49,7 @@ jobs:
           WORKFLOW_INPUT_NOTE: ${{ inputs.note }}
           EVENT_INPUT_NOTE: ${{ github.event.inputs.note }}
           EVENT_INPUTS_JSON: ${{ toJson(github.event.inputs) }}
+          LIFE_NOTE_TZ: Asia/Tokyo
         run: |
           uv run python - <<'PY'
           import os
