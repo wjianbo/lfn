@@ -13,3 +13,4 @@ life note, [howto](./howto.md)
 - 08:35 | testing
 - 09:36 | testing
 - 10:45 | Cook lunch
+- 13:14 | Testing
