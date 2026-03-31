@@ -8,3 +8,4 @@ life note, [howto](./howto.md)
 2026.03.31
 
 - 05:58 | Wake up
+- 08:03 | Start work
