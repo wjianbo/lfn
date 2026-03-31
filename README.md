@@ -15,3 +15,7 @@ life note, [howto](./howto.md)
 - 10:45 | Cook lunch
 - 13:14 | Testing
 - 13:30 | [Work] Draft document
+
+2026.04.01
+
+- 08:52 | Poop
