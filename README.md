@@ -23,3 +23,4 @@ life note, [howto](./howto.md)
 - 10:36 | Soak the brown rice before cooking
 - 15:44 | @Hospital
 - 20:56 | Wash dishes
+- 22:37 | Bedtime
