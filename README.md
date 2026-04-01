@@ -19,3 +19,4 @@ life note, [howto](./howto.md)
 2026.04.01
 
 - 08:52 | Poop
+- 10:25 | Online meeting
