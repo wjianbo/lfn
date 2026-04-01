@@ -24,3 +24,7 @@ life note, [howto](./howto.md)
 - 15:44 | @Hospital
 - 20:56 | Wash dishes
 - 22:37 | Bedtime
+
+2026.04.02
+
+- 07:20 | Cook breakfast
