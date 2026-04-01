@@ -21,3 +21,4 @@ life note, [howto](./howto.md)
 - 08:52 | Poop
 - 10:25 | Online meeting
 - 10:36 | Soak the brown rice before cooking
+- 15:44 | @Hospital
