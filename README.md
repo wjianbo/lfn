@@ -30,3 +30,4 @@ life note, [howto](./howto.md)
 - 07:20 | Cook breakfast
 - 10:02 | Snack: yogurt cup
 - 10:29 | Soak the brown rice before cooking
+- 21:26 | Wash dishes
