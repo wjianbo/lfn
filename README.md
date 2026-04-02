@@ -28,3 +28,4 @@ life note, [howto](./howto.md)
 2026.04.02
 
 - 07:20 | Cook breakfast
+- 10:02 | Snack: yogurt cup
