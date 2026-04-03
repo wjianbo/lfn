@@ -36,3 +36,4 @@ life note, [howto](./howto.md)
 
 - 07:28 | Cook breakfast
 - 08:05 | Poop
+- 19:25 | Read
