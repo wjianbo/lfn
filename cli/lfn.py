@@ -20,11 +20,12 @@ import re
 import subprocess
 import sys
 from dataclasses import dataclass
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from importlib import metadata
 from pathlib import Path
 from typing import Callable
 from urllib.parse import unquote, urlparse
+from zoneinfo import ZoneInfo, ZoneInfoNotFoundError
 
 from rich.console import Console
 from rich.padding import Padding
@@ -37,6 +38,8 @@ console = Console()
 
 
 DISCOVERY_ATTEMPTS: list[Path] = []
+DEFAULT_TIMEZONE = "Asia/Shanghai"
+TIMEZONE_ENV_VAR = "LIFE_NOTE_TZ"
 NOTE_TIME_PREFIX_RE = re.compile(r"^(?P<time>\d{2}:\d{2})\s*\|\s*(?P<body>.+)$")
 NOTE_TIME_SUFFIX_RE = re.compile(r"^(?P<body>.+?)\s*\|\s*(?P<time>\d{2}:\d{2})$")
 
@@ -159,10 +162,28 @@ def get_discovery_hints() -> str:
     return "；已尝试: " + "、".join(preview)
 
 
-def get_utc8_now() -> datetime:
-    """获取 UTC+8 的当前时间"""
-    utc8 = timezone(timedelta(hours=8))
-    return datetime.now(utc8)
+def get_configured_timezone_name() -> str:
+    """获取当前配置的时区名称。"""
+    return os.environ.get(TIMEZONE_ENV_VAR, DEFAULT_TIMEZONE)
+
+
+def get_configured_timezone() -> ZoneInfo:
+    """解析当前配置的时区。"""
+    timezone_name = get_configured_timezone_name()
+    try:
+        return ZoneInfo(timezone_name)
+    except ZoneInfoNotFoundError:
+        console.print(
+            "[red]错误: 无效时区 "
+            f"`{timezone_name}`。请将 {TIMEZONE_ENV_VAR} 设置为有效的 IANA 时区，"
+            "例如 `Asia/Shanghai` 或 `Asia/Tokyo`。[/red]"
+        )
+        sys.exit(1)
+
+
+def get_current_time() -> datetime:
+    """获取当前配置时区的时间。"""
+    return datetime.now(get_configured_timezone())
 
 
 def format_date(date: datetime) -> str:
@@ -171,7 +192,7 @@ def format_date(date: datetime) -> str:
 
 
 def format_note_time(date: datetime) -> str:
-    """格式化笔记附加时间，使用 UTC+8 的 24 小时制 HH:MM。"""
+    """格式化笔记附加时间，使用 24 小时制 HH:MM。"""
     return date.strftime("%H:%M")
 
 
@@ -1148,7 +1169,7 @@ def main():
     content = read_readme()
 
     if args.edit:
-        now = get_utc8_now()
+        now = get_current_time()
         if args.all or positional_all:
             launch_textual_editor(
                 initial_text=content,
@@ -1173,7 +1194,7 @@ def main():
         return
 
     if args.week:
-        now = get_utc8_now()
+        now = get_current_time()
         start_date, end_date = get_last_week_range(now)
         sections = filter_sections_by_date_range(
             get_all_notes(content), start_date, end_date
@@ -1181,8 +1202,7 @@ def main():
         sys.stdout.write(render_week_notes_markdown(sections, start_date, end_date))
         return
 
-    # 获取 UTC+8 当前时间
-    now = get_utc8_now()
+    now = get_current_time()
     today_str = format_date(now)
 
     if args.show:
@@ -1190,7 +1210,10 @@ def main():
         show_today_notes(now, notes)
         return
 
-    console.print(f"[dim]当前时间 (UTC+8): {now.strftime('%Y-%m-%d %H:%M:%S')}[/dim]")
+    console.print(
+        "[dim]当前时间 "
+        f"({get_configured_timezone_name()}): {now.strftime('%Y-%m-%d %H:%M:%S')}[/dim]"
+    )
 
     # 检查今天是否已有条目
     if not check_date_exists(content, now):

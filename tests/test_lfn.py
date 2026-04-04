@@ -1,10 +1,13 @@
 from __future__ import annotations
 
 import importlib.util
+import os
 import sys
 import unittest
-from datetime import datetime, timedelta, timezone
+from datetime import datetime, timedelta
 from pathlib import Path
+from unittest.mock import patch
+from zoneinfo import ZoneInfo
 
 
 MODULE_PATH = Path(__file__).resolve().parents[1] / "cli" / "lfn.py"
@@ -16,7 +19,7 @@ sys.modules[MODULE_SPEC.name] = lfn
 MODULE_SPEC.loader.exec_module(lfn)
 
 
-UTC8 = timezone(timedelta(hours=8))
+UTC8 = ZoneInfo("Asia/Shanghai")
 
 
 class LfnTimestampTests(unittest.TestCase):
@@ -112,10 +115,57 @@ class LfnDateTimeTests(unittest.TestCase):
         self.assertIsNone(lfn.parse_date_line("2026.13.45"))  # 无效月份和日期
         self.assertIsNone(lfn.parse_date_line("2026.02.30"))  # 无效日期
 
-    def test_get_utc8_now(self) -> None:
-        """测试获取 UTC+8 时间"""
-        now = lfn.get_utc8_now()
-        self.assertEqual(now.tzinfo.utcoffset(None), timedelta(hours=8))
+    def test_get_current_time_defaults_to_asia_shanghai(self) -> None:
+        """测试默认使用 Asia/Shanghai 时区。"""
+        now = lfn.get_current_time()
+        self.assertEqual(now.utcoffset(), timedelta(hours=8))
+
+    def test_get_configured_timezone_name_from_env(self) -> None:
+        """测试从环境变量读取时区名称。"""
+        with patch.dict(os.environ, {lfn.TIMEZONE_ENV_VAR: "Asia/Tokyo"}, clear=False):
+            self.assertEqual(lfn.get_configured_timezone_name(), "Asia/Tokyo")
+
+    def test_get_configured_timezone_from_env(self) -> None:
+        """测试从环境变量解析时区。"""
+        with patch.dict(os.environ, {lfn.TIMEZONE_ENV_VAR: "Asia/Tokyo"}, clear=False):
+            timezone = lfn.get_configured_timezone()
+        self.assertEqual(timezone.key, "Asia/Tokyo")
+
+    def test_get_configured_timezone_invalid_exits(self) -> None:
+        """测试无效时区会报错退出。"""
+        with patch.dict(
+            os.environ, {lfn.TIMEZONE_ENV_VAR: "Mars/BaseAlpha"}, clear=False
+        ):
+            with self.assertRaises(SystemExit) as context:
+                lfn.get_configured_timezone()
+
+        self.assertEqual(context.exception.code, 1)
+
+    def test_get_current_time_can_cross_date_boundary_with_different_timezone(
+        self,
+    ) -> None:
+        """测试配置不同时区后当天日期会变化。"""
+
+        class FixedDateTime(datetime):
+            @classmethod
+            def now(cls, tz=None):
+                utc_now = datetime(2026, 3, 31, 15, 30, tzinfo=ZoneInfo("UTC"))
+                if tz is None:
+                    return utc_now
+                return utc_now.astimezone(tz)
+
+        with patch.object(lfn, "datetime", FixedDateTime):
+            with patch.dict(
+                os.environ, {lfn.TIMEZONE_ENV_VAR: "Asia/Shanghai"}, clear=False
+            ):
+                shanghai_now = lfn.get_current_time()
+            with patch.dict(
+                os.environ, {lfn.TIMEZONE_ENV_VAR: "Asia/Tokyo"}, clear=False
+            ):
+                tokyo_now = lfn.get_current_time()
+
+        self.assertEqual(lfn.format_date(shanghai_now), "2026.03.31")
+        self.assertEqual(lfn.format_date(tokyo_now), "2026.04.01")
 
 
 class LfnDateSectionTests(unittest.TestCase):
