@@ -42,3 +42,4 @@ life note, [howto](./howto.md)
 
 - 15:14 | Coffee time
 - 16:11 | Read
+- 19:59 | Wash dishes
