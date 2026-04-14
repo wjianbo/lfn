@@ -47,3 +47,7 @@ life note, [howto](./howto.md)
 2026.04.05
 
 - 06:34 | Wake up
+
+2026.04.14
+
+- 20:37 | Wash dishes
