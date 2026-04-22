@@ -69,3 +69,4 @@ life note, [howto](./howto.md)
 2026.04.22
 
 - 11:55 | 做午饭（牛腱肉炖萝卜、炒包菜）
+- 17:12 | 测试 my-shortcut-app
