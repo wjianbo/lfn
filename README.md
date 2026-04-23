@@ -82,3 +82,7 @@ life note, [howto](./howto.md)
 - 22:03 | 洗漱
 - 23:27 | life note app：改善 UI
 - 23:57 | 睡觉
+
+2026.04.24
+
+- 06:08 | 醒来
