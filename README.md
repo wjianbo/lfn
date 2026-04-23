@@ -77,3 +77,4 @@ life note, [howto](./howto.md)
 - 10:15 | Online meeting
 - 17:17 | 修改 life note app：直接更新 README，不再调用 GitHub Actions API
 - 17:41 | 修改 life note app：支持离线模式
+- 18:13 | 做晚饭（味增汤、肉夹馍、烤肠、荞麦面）
