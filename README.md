@@ -81,3 +81,4 @@ life note, [howto](./howto.md)
 - 21:06 | 洗碗
 - 22:03 | 洗漱
 - 23:27 | life note app：改善 UI
+- 23:57 | 睡觉
