@@ -92,3 +92,4 @@ life note, [howto](./howto.md)
 - 08:42 | B
 - 08:53 | 晾衣服
 - 10:06 | Online meeting
+- 10:35 | 泡米（玄米 100g 白米 90g）
