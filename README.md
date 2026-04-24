@@ -91,3 +91,4 @@ life note, [howto](./howto.md)
 - 07:22 | 吃早饭
 - 08:42 | B
 - 08:53 | 晾衣服
+- 10:06 | Online meeting
