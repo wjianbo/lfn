@@ -94,3 +94,4 @@ life note, [howto](./howto.md)
 - 10:06 | Online meeting
 - 10:35 | 泡米（玄米 100g 白米 90g）
 - 11:34 | Online meeting
+- 12:07 | 做午饭（牛肉芦笋、金枪鱼玉米蔬菜沙拉）
