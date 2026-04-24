@@ -96,4 +96,3 @@ life note, [howto](./howto.md)
 - 11:34 | Online meeting
 - 12:07 | 做午饭（牛肉芦笋、金枪鱼玉米蔬菜沙拉）
 - 15:21 | 自社全体会議
-- 15:59 | test
