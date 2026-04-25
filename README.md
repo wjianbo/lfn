@@ -119,4 +119,3 @@ life note, [howto](./howto.md)
 - 20:38 | 到家
 - 21:40 | 修改 app bug
 - 23:07 | 折腾 app
-- 23:33 | 测试
