@@ -127,3 +127,4 @@ life note, [howto](./howto.md)
 - 07:22 | 吃早饭
 - 07:57 | 刷碗
 - 08:12 | B
+- 08:15 | Online meeting
