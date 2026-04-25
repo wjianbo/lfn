@@ -118,4 +118,3 @@ life note, [howto](./howto.md)
 - 19:32 | 出门买菜
 - 20:38 | 到家
 - 21:40 | 修改 app bug
-- 21:43 | test
