@@ -151,4 +151,3 @@ life note, [howto](./howto.md)
 - 19:30 | 买菜
 - 21:11 | 折腾 app
 - 21:12 | test
-- 21:12 | test
