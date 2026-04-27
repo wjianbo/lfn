@@ -148,3 +148,4 @@ life note, [howto](./howto.md)
 - 15:00 | online meeting
 - 18:10 | 做晚饭（拌黄瓜、烤竹荚鱼、蒸蛋）
 - 19:00 | 吃饭
+- 19:30 | 买菜
