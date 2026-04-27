@@ -141,3 +141,4 @@ life note, [howto](./howto.md)
 2026.04.28
 
 - 05:50 | 起床
+- 06:02 | test
