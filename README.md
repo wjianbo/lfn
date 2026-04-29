@@ -156,4 +156,3 @@ life note, [howto](./howto.md)
 - 12:35 | 午饭（肉末豆腐、小松菜）
 - 14:42 | 和 ChatGPT 讨论 app 开发方向
 - 14:54 | app 开发
-- 15:15 | test
