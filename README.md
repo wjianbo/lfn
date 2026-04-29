@@ -159,4 +159,3 @@ life note, [howto](./howto.md)
 - 17:25 | 给 life note app 加了 todo 模式
 - 17:25 | 让 ChatGPT 翻译了两篇文章
 - 20:40 | 听罗永浩访谈蔡康永
-- 06:30 | 晚饭（烤红薯、鮭、金枪鱼蔬菜沙拉）
