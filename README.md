@@ -157,4 +157,3 @@ life note, [howto](./howto.md)
 - 14:42 | 和 ChatGPT 讨论 app 开发方向
 - 14:54 | app 开发
 - 16:12 | 晚饭（烤红薯、鮭、金枪鱼蔬菜沙拉）
-- 16:13 | test
