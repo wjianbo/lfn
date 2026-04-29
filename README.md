@@ -158,3 +158,4 @@ life note, [howto](./howto.md)
 - 14:54 | app 开发
 - 17:25 | 给 life note app 加了 todo 模式
 - 17:25 | 让 ChatGPT 翻译了两篇文章
+- 20:40 | 听罗永浩访谈蔡康永
