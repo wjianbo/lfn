@@ -6,3 +6,4 @@ life note, [howto](./howto.md)
 - 06:09 | 读 the book of joy
 - 07:20 | 起床
 - 08:30 | 扔垃圾
+- 08:00 | 早饭（面包、鸡蛋、牛奶、黄瓜）
