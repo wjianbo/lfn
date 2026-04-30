@@ -170,3 +170,4 @@ life note, [howto](./howto.md)
 - 10:09 | life note app - todo 删除功能
 - 13:12 | 午饭（香菜炒牛肉、醋溜白菜）
 - 15:04 | 护照更新申请
+- 19:30 | 买菜
