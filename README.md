@@ -11,6 +11,6 @@ life note, [howto](./howto.md)
 - 18:30 | 晚饭（肉末茄子、凉拌黄瓜、纳豆、米饭）
 - 19:00 | 买菜
 - 22:30 | 给 lfn 增加编辑功能 #app开发
-- 23:21 | 给 life note app 加标签功能
+- 23:21 | 给 life note app 加标签功能 #app开发
 - 23:21 | 输入 / 时显示候选命令 #app开发
 - 23:21 | todo 项目删除功能 #app开发
