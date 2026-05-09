@@ -67,4 +67,4 @@ life note, [howto](./howto.md)
 
 2026.05.09
 
-- 23:29 | life note app：解决了安卓版键盘遮挡输入框的问题
+- 09:30 | life note app：解决了安卓版键盘遮挡输入框的问题
