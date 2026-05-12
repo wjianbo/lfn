@@ -93,4 +93,4 @@ life note, [howto](./howto.md)
 
 2026.05.13
 
-- 06:36 | 请假
+- 06:36 | /todo 请假
