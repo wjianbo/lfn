@@ -13,3 +13,4 @@ life note, [howto](./howto.md)
 - 07:23 | 读书 · 19 min
 - 08:50 | 读书 · 24 min
 - 11:17 | 工作 · 38 min
+- 16:51 | 翻译 · 49 min
