@@ -37,3 +37,4 @@ life note, [howto](./howto.md)
 2026.08.09
 
 - 22:40 | 读书 · 15 min
+- 22:54 | 冥想 · 12 min
