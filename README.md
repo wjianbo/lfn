@@ -50,3 +50,4 @@ life note, [howto](./howto.md)
 2026.08.11
 
 - 09:19 | 冥想 · 8 min
+- 10:17 | 读书 · 10 min
