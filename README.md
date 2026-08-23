@@ -69,3 +69,4 @@ life note, [howto](./howto.md)
 2026.08.23
 
 - 12:20 | 洗厕所 · 18 min
+- 12:52 | 做饭 · 24 min
