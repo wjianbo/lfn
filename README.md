@@ -22,4 +22,3 @@ life note, [howto](./howto.md)
 2026.10.30
 
 - 08:59 | #家务 洗碗
-- 11:40 | Test #test
