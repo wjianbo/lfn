@@ -11,3 +11,7 @@ life note, [howto](./howto.md)
 - 08:58 | breakfast
 - 10:57 | #app开发 显示过去的待办
 - 13:10 | 打网球
+
+2026.11.09
+
+- 04:36 | sleep
