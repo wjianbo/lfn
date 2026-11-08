@@ -10,4 +10,3 @@ life note, [howto](./howto.md)
 - 08:25 | #app开发 增加返回今天的快捷按钮
 - 08:58 | breakfast
 - 10:57 | #app开发 显示过去的待办
-- 12:43 | 买牙线
