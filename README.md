@@ -15,3 +15,4 @@ life note, [howto](./howto.md)
 2026.11.09
 
 - 04:36 | sleep
+- 08:56 | wake up
