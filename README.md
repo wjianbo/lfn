@@ -9,3 +9,4 @@ life note, [howto](./howto.md)
 - 00:10 | #app开发 life note app 2.0
 - 08:25 | #app开发 增加返回今天的快捷按钮
 - 08:58 | breakfast
+- 10:57 | #app开发 显示过去的待办
