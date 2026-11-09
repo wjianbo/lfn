@@ -16,3 +16,4 @@ life note, [howto](./howto.md)
 
 - 04:36 | sleep
 - 08:56 | wake up
+- 10:05 | Online meeting
