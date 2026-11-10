@@ -17,3 +17,7 @@ life note, [howto](./howto.md)
 - 04:36 | sleep
 - 08:56 | wake up
 - 10:00 | Online meeting
+
+2026.11.10
+
+- 17:04 | 准备保育园申请材料
