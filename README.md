@@ -25,7 +25,7 @@ life note, [howto](./howto.md)
 
 2026.11.11
 
-- 22:52 | #愚痴 <!-- lifenote:notes:v1:%22%E5%86%AC%E5%A4%A9%5Cn%E7%AD%89%E5%BE%97%E8%AE%A9%E4%BA%BA%E6%8A%91%E9%83%81%22 -->
+- 22:52 | #愚痴 #工作 <!-- lifenote:notes:v1:%22%E5%86%AC%E5%A4%A9%5Cn%E7%AD%89%E5%BE%97%E8%AE%A9%E4%BA%BA%E6%8A%91%E9%83%81%22 -->
 
 2026.11.12
 
